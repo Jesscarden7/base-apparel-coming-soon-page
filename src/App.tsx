@@ -1,12 +1,14 @@
-import './App.css'
+import "./App.css";
+import LeftPanel from "./components/leftPanel/LeftPanel";
+import RightPanel from "./components/rightPanel/RightPanel";
 
 function App() {
-
   return (
     <div>
-     Hola mundo
+      <LeftPanel />
+      <RightPanel />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
