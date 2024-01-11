@@ -1,0 +1,11 @@
+.leftPanelContainer {
+  display: flex;
+  flex-direction: column;
+  width: 73%;
+  background-image: url("../../assets/images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5% 10%;
+  font-family: "Josefin Sans", sans-serif;
+}

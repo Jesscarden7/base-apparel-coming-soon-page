@@ -1,10 +1,10 @@
-// import styles from './LeftPanel.module.css'
+import styles from "./LeftPanel.module.css";
 import Header from "./header/Header";
 import Main from "./main/Main";
 
 function LeftPanel() {
   return (
-    <div>
+    <div className={styles.leftPanelContainer}>
       <Header />
       <Main />
     </div>

@@ -1,0 +1,6 @@
+.imgContainer {
+  background-image: url("../../assets/images/hero-desktop.jpg");
+  width: 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

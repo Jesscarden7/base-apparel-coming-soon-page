@@ -1,11 +1,7 @@
-// import styles from './RightPanel.module.css'
+import styles from "./RightPanel.module.css";
 
 function RightPanel() {
-  return ( 
-    <div>
-      Photo
-    </div>
-   );
+  return <div className={styles.imgContainer} />;
 }
 
 export default RightPanel;

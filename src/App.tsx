@@ -4,7 +4,7 @@ import RightPanel from "./components/rightPanel/RightPanel";
 
 function App() {
   return (
-    <div>
+    <div className='Wrapper'>
       <LeftPanel />
       <RightPanel />
     </div>

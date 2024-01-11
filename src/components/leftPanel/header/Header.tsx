@@ -1,9 +1,10 @@
-// import styles from './Header.module.css'
+import styles from './Header.module.css'
+import logo from '../../../assets/images/logo.svg'
 
 function Header() {
   return ( 
-    <div>
-      Header
+    <div className={styles.headerContainer}>
+      <img src={logo} />
     </div>
    );
 }
