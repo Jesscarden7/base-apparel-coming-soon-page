@@ -26,7 +26,8 @@
 
 .formContainer {
   display: flex;
-  height: 40px;
+  flex-direction: column;
+  height: 52px;
   position: relative;
 }
 
@@ -34,16 +35,23 @@
   background: transparent;
   border: 1px solid hsl(0, 36%, 70%, 0.7);
   width: 50%;
+  height: 76%;
   border-radius: 20px;
+  padding-left: 15px;
 }
 
 .formContainer input::placeholder {
   font-family: "Josefin Sans", sans-serif;
   color: hsl(0, 36%, 70%, 0.5);
   font-size: 11px;
-  padding-left: 8%;
+  padding-left: 5%;
   letter-spacing: 0.3px;
   font-weight: bold;
+}
+
+.errorMsg {
+  color: hsl(0, 93%, 68%);
+  /* poner un margin */
 }
 
 .imgContainer {
@@ -55,6 +63,7 @@
   border-radius: 20px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .imgContainer img {
@@ -90,12 +99,12 @@
   .imgContainer {
     left: 78%;
     width: 60px;
-    height: 47px;
+    height: 36px;
     border-radius: 23px;
   }
 
   .imgContainer img {
-    margin: 13px
+    margin: 10px
   }
 
   .formContainer input::placeholder {
