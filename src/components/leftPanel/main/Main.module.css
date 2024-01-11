@@ -1,5 +1,5 @@
 .mainContainer {
-  padding: 15% 0%;
+  padding: 17% 0%;
 }
 
 .mainContainer h1:first-of-type {
@@ -33,7 +33,7 @@
 .formContainer input {
   background: transparent;
   border: 1px solid hsl(0, 36%, 70%, 0.7);
-  width: 45%;
+  width: 50%;
   border-radius: 20px;
 }
 
@@ -49,7 +49,7 @@
 .imgContainer {
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   position: absolute;
-  right: 50%;
+  right: 45%;
   width: 73px;
   height: 40px;
   border-radius: 20px;
@@ -59,4 +59,46 @@
 
 .imgContainer img {
   margin: 10px;
+}
+
+@media (max-width: 376px) {
+  .mainContainer {
+    padding: 22% 0%;
+  }
+
+  .mainContainer h1{ 
+    text-align: center;
+    font-size: 43px;
+  }
+
+  .mainContainer p br {
+    display: none;
+  }
+
+  .mainContainer P {
+    text-align: center;
+  }
+
+  .formContainer {
+    height: 46px;
+  }
+
+  .formContainer input {
+    width: 92%;
+  }
+
+  .imgContainer {
+    left: 78%;
+    width: 60px;
+    height: 47px;
+    border-radius: 23px;
+  }
+
+  .imgContainer img {
+    margin: 13px
+  }
+
+  .formContainer input::placeholder {
+    font-size: 13px;
+  }
 }

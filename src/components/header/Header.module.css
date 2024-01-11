@@ -1,0 +1,16 @@
+.headerContainer {
+  position: fixed;
+  width: 100%;
+  margin: 5% 0 0 10%;
+}
+
+@media (max-width: 376px) {
+  .headerContainer {
+    position: unset;
+    margin: 7% 10%;
+  }
+
+  .headerContainer img {
+    width: 30%;
+  }
+}
