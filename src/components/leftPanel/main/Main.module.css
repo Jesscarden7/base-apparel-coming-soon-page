@@ -27,7 +27,7 @@
 .formContainer {
   display: flex;
   flex-direction: column;
-  height: 52px;
+  height: 56px;
   position: relative;
 }
 
@@ -35,7 +35,7 @@
   background: transparent;
   border: 1px solid hsl(0, 36%, 70%, 0.7);
   width: 50%;
-  height: 76%;
+  height: 65%;
   border-radius: 20px;
   padding-left: 15px;
 }
@@ -44,22 +44,36 @@
   font-family: "Josefin Sans", sans-serif;
   color: hsl(0, 36%, 70%, 0.5);
   font-size: 11px;
-  padding-left: 5%;
+  padding-left: 6px;
   letter-spacing: 0.3px;
   font-weight: bold;
 }
 
+.formContainer input:focus {
+  outline-color: hsl(0, 93%, 68%);
+}
+
 .errorMsg {
-  color: hsl(0, 93%, 68%);
-  /* poner un margin */
+  margin: 8px 0 0 18px;
+  color: hsl(0, 74%, 74%);
+  font-size: 11px;
+  word-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.iconError {
+  position: absolute;
+  left: 41%;
+  top: 14%;
+  width: 18px;
 }
 
 .imgContainer {
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   position: absolute;
   right: 45%;
-  width: 73px;
-  height: 40px;
+  width: 70px;
+  height: 37px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -75,7 +89,7 @@
     padding: 22% 0%;
   }
 
-  .mainContainer h1{ 
+  .mainContainer h1 {
     text-align: center;
     font-size: 43px;
   }
@@ -104,7 +118,7 @@
   }
 
   .imgContainer img {
-    margin: 10px
+    margin: 10px;
   }
 
   .formContainer input::placeholder {

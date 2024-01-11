@@ -1,5 +1,6 @@
 import styles from "./Main.module.css";
 import iconArrow from "../../../assets/images/icon-arrow.svg";
+import iconError from "../../../assets/images/icon-error.svg";
 import { useState } from "react";
 
 function Main() {
@@ -10,7 +11,7 @@ function Main() {
 
   const handleClick = () => {
     if (email === "" || !emailRegex.test(email)) {
-      setErrorMsg("Please provide a valid input");
+      setErrorMsg("Please provide a valid email");
     }
   };
 
@@ -38,8 +39,9 @@ function Main() {
           placeholder='Email Adress'
         />
         <span className={styles.errorMsg}>{errorMsg}</span>
+        {errorMsg !== "" && <img src={iconError} className={styles.iconError} />}
         <div onClick={handleClick} className={styles.imgContainer}>
-          <img src={iconArrow} alt='' />
+          <img src={iconArrow} />
         </div>
       </div>
     </div>
